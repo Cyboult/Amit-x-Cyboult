@@ -1,1 +1,66 @@
+/* style.css - Cyberpunk Dark Theme */
+
+{ margin: 0; padding: 0; box-sizing: border-box; }
+
+
+body { font-family: 'Orbitron', sans-serif; background: linear-gradient(135deg, #0f0c29, #302b63, #24243e); color: #e0e0e0; background-size: cover; background-attachment: fixed; overflow-x: hidden; }
+
+nav { background-color: #0d0d0d; color: #00ffff; position: sticky; top: 0; width: 100%; z-index: 999; box-shadow: 0 2px 5px rgba(0, 255, 255, 0.3); }
+
+.nav-container { display: flex; justify-content: space-between; align-items: center; padding: 0.75rem 1rem; flex-wrap: wrap; }
+
+.nav-logo { display: flex; align-items: center; }
+
+.nav-logo img { height: 40px; margin-right: 10px; }
+
+.nav-logo span { font-weight: bold; font-size: 1.2rem; color: #00ffff; text-shadow: 0 0 5px #00ffff; }
+
+.nav-links { display: flex; gap: 1.5rem; }
+
+.nav-links a { color: #00ffff; text-decoration: none; font-weight: bold; padding: 0.5rem 0.75rem; border-radius: 4px; transition: background 0.3s, color 0.3s; }
+
+.nav-links a:hover { background-color: #00ffff; color: #0d0d0d; text-shadow: none; }
+
+.hamburger { display: none; font-size: 1.8rem; cursor: pointer; color: #00ffff; }
+
+.dashboard {
+  min-height: 100vh;
+  padding: 0 2rem;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: blur(4px);
+  border-bottom: 2px solid #00ffff55;
+}
+
+.dashboard h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.dashboard p {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  color: #ff6ec7;
+}
+
+.thought { font-style: italic; margin-top: 2rem; color: #00ffff; font-size: 1.1rem; opacity: 0; transition: opacity 2s ease-in-out; text-shadow: 0 0 10px #00ffff88; }
+
+.responsive-section { padding: 2rem; background-color: rgba(0, 0, 0, 0.5); margin: 1rem; border-radius: 10px; border: 1px solid #00ffff33; box-shadow: 0 0 10px #00ffff44; }
+
+footer { background-color: #0d0d0d; color: #888; text-align: center; padding: 1rem; font-size: 0.9rem; }
+
+@media (max-width: 768px) { .nav-links { display: none; flex-direction: column; width: 100%; background-color: #0d0d0d; }
+
+.nav-links.show { display: flex; }
+
+.hamburger { display: block; }
+
+.nav-links a { padding: 1rem; border-top: 1px solid #222; } }
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
 
