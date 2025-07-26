@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JNV Aurangabad Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/Jnv.jpg" />
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img src="/Jnv.jpg" alt="JNV Logo" />
+        <span>JNV Aurangabad</span>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="nav-links" id="navLinks">
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="/resources.html">Resources</a>
+      </div>
+    </div>
+  </nav>
 
+  <main>
+    <header class="dashboard">
+      <h1>Welcome to JNV Aurangabad</h1>
+      <p>“Pragyanam Brahma” – Knowledge is Divine</p>
+      <p id="randomThought" class="thought"></p>
+    </header>
+
+    <section class="responsive-section" id="about">
+      <h2>About Us</h2>
+      <p>Jawahar Navodaya Vidyalaya, Aurangabad (Bihar) is a co-educational, fully residential school affiliated to CBSE. We aim to provide quality education to talented rural children.</p>
+    </section>
+
+    <section class="responsive-section" id="resources">
+      <h2>Resources</h2>
+      <p>Academic material, student resources, and useful links will be available here.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 JNV Aurangabad. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
